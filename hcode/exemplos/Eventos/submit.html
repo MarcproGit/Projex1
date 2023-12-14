@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evento formulario:Submit</title>
+</head>
+<body>
+    <form onsubmit="debug(event)">
+    <input type="text" >
+    <button type="submit">Enviar</button>
+    </form>
+   <!--evento acontece qdo envio dos dados-->
+    <script>
+        function debug(e) {
+            e.preventDefault();//serve para cancelar a atualizaçao da pagina no console
+            console.log('Evento: ' + e.type);
+           
+        
+        }
+        
+        </script>
+
+
+</body>
+</html>

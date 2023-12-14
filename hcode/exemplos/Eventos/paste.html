@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evento de mouse:Paste</title>
+    
+</head>
+<body>
+    <input type="text" onpaste="debug(event)">
+
+    <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere labore minima vitae quis atque quidem cumque ipsam quisquam debitis quia! Ab ullam harum sapiente id enim eveniet totam molestiae repellat!</p>
+   <!--evento acontece qdo colo algo dentro da elemento -->
+
+    <script>
+    function debug(e) {
+        console.log('Evento: ' + e.type); 
+    } 
+    </script>
+
+
+</body>
+</html>

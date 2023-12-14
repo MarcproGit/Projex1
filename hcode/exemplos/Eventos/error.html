@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evento de midia:Error</title>
+    <style>
+        video{
+            width: 80vw;
+        }
+    </style>
+    
+</head>
+<body>
+
+    <video src="https://joy1.videvo.net/videvo_files/video/free/video0469/large_watermarked/_import_6174f7e5631083.79269933_naoexiste.mp4"
+        controls
+        onerror="debug(event)"
+        >
+
+    </video>
+<!--o evento acontece qdo nao encontra o arquivo dando sinal de erro-->
+    <script>
+    function debug(e) {
+        console.log('Evento: ' + e.type); 
+    } 
+    </script>
+
+
+</body>
+</html>

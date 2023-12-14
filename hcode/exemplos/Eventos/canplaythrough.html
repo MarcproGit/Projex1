@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evento de audio:Canplaythrough</title>
+    <style>
+        video{
+            width: 80vw;
+        }
+    </style>
+    
+</head>
+<body>
+
+    <video src="https://joy1.videvo.net/videvo_files/video/free/2014-12/large_watermarked/Raindrops_Videvo_preview.mp4"
+        controls
+        oncanplaythrough="debug(event)"
+        oncanplay="debug(event)"
+        >
+    </video>
+<!--ele acontece qdo começa a tocar o video-->
+    <script>
+    function debug(e) {
+        console.log('Evento: ' + e.type); 
+    } 
+    </script>
+
+
+</body>
+</html>
